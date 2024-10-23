@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Powered Workflow System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>AI-Powered Workflow Recommendation System</h1>
+  </nav>
+
+  <div class="container">
+    <!-- Left Column: Workflow Form -->
+    <div class="column left">
+      <h2>Create New Workflow</h2>
+      <form id="workflowForm">
+        <input type="text" id="workflowName" placeholder="Workflow Name" required>
+        <textarea id="workflowDescription" placeholder="Workflow Description (optional)" rows="4"></textarea>
+        <div id="tasksContainer">
+          <div class="task">
+            <input type="text" placeholder="Task Name" required>
+            <input type="text" placeholder="Assigned To" required>
+          </div>
+        </div>
+        <button type="button" id="addTaskBtn">+ Add Task</button>
+        <button type="submit">Create Workflow</button>
+      </form>
+    </div>
+
+    <!-- Middle Column: Workflow List -->
+    <div class="column middle">
+      <h2>Workflow List</h2>
+      <ul id="workflowList">
+        <!-- Workflow items will be injected here -->
+      </ul>
+      
+      <!-- Section to Show Workflow Details -->
+      <div id="workflowDetails">
+        <h3>Selected Workflow Details</h3>
+        <p id="workflowDetailsText">No workflow selected.</p>
+      </div>
+    </div>
+
+    <!-- Right Column: Real-Time Notifications -->
+    <div class="column right">
+      <h2>Real-Time Notifications</h2>
+      <ul id="notificationList">
+        <!-- Notifications will appear here -->
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

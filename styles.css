@@ -1,0 +1,163 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4f8;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+/* Main Layout */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Columns */
+.column {
+  width: 30%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  background-color: #f7fafc;
+}
+
+.middle {
+  background-color: #e7f3ff;
+}
+
+.right {
+  background-color: #fff3cd;
+}
+
+/* Section Headings */
+.column h2, .column h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Form Styling */
+#workflowForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#workflowForm input, #workflowForm textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#addTaskBtn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#addTaskBtn:hover {
+  background-color: #0056b3;
+}
+
+#workflowForm button[type="submit"] {
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#workflowForm button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+/* Workflow List Styling */
+#workflowList {
+  list-style-type: none;
+}
+
+#workflowList li {
+  background-color: #d1ecf1;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: #0c5460;
+  cursor: pointer;
+}
+
+#workflowList li strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Workflow Details Section */
+#workflowDetails {
+  margin-top: 20px;
+  background-color: #e2e3e5;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#workflowDetails h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+#workflowDetails p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Real-Time Notifications */
+#notificationList {
+  list-style-type: none;
+}
+
+#notificationList li {
+  background-color: #fff3cd;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: #856404;
+  font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
